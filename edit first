@@ -1,0 +1,18 @@
+function award= get_award(year,money)
+year=input('请输入工作时间:');
+money=input('请输入月薪:');
+if year<1&&money<=80000
+    award=money
+elseif year<1&&money>8000
+    award=1.2*money
+elseif year<3&&money<=15000
+    award=2*money
+elseif year<3&&money>15000
+    award=3*money
+elseif year>=3&&money<=20000
+    award=3*money
+elseif year>=3&&money>20000
+    award=4*20000
+end
+
+end
